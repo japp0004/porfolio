@@ -17,6 +17,17 @@
         h1 {
             color:rgb(223, 166, 125);
             font-family: monospace;
+            background-color: brown;
+        }
+        .link{
+            color: red;
+        }
+        .link:hover{
+            color: blue;
+            outline: 1px solid blue;
+        }
+        .link:active{
+            outline: 10px solid black;
         }
         body {
             background:beige ;
@@ -31,6 +42,12 @@
         }
         .description{
             border: 1px solid red;
+        }  
+        li:first-child{
+            color: chartreuse;
+        } 
+        li:last-child{
+            color: crimson;
         }
     </style>
     
@@ -39,9 +56,9 @@
     <header>
         <h1> Portfolio de Juan Andres</h1>
         <nav>
-            <a href="#experiencia">Experiencia</a> <!--Enlaces internos-->
-            <a href="#proyectos">Proyectos</a>
-            <a href="https://Youtube.es" target="_blank"> Youtube</a>
+            <a class="link"  href="#experiencia">Experiencia</a> <!--Enlaces internos-->
+            <a class="link" href="#proyectos">Proyectos</a>
+            <a class="link" href="https://Youtube.es" target="_blank"> Youtube</a>
         </nav>
     </header>
     <main>
